@@ -3,7 +3,7 @@ import type { GatsbyConfig } from "gatsby"
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Tochi's Blog`,
-    description: "Tochi's Personal Site",
+    description: "Personal Blog",
     siteUrl: `https://www.tochiamanze.com`,
     author: `Tochi Amanze`,
   },

@@ -3,13 +3,12 @@ import { TypeAnimation } from "react-type-animation";
 import { graphql } from "gatsby";
 import { useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
-import { rhythm } from "../utils/typography";
 const Title = () => {
   const d = useStaticQuery(graphql`
     query TitleQuery {
       avatar: file(absolutePath: { regex: "/IMG_7327.jpg/" }) {
         childImageSharp {
-          fixed(width: 200, height: 200, quality: 100, cropFocus: EAST) {
+          fixed(width: 150, height: 150, quality: 100, cropFocus: EAST) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -23,7 +22,7 @@ const Title = () => {
   `);
 
   return (
-    <div className="flex space-x-10">
+    <div className="flex md:space-x-10">
       <div>
         <Image
           fixed={d.avatar.childImageSharp.fixed}
@@ -32,8 +31,8 @@ const Title = () => {
         />{" "}
       </div>
       <div>
-        <h1 className="text-2xl">Tochi Amanze.</h1>
-        <h2 className="text-xl">
+        <h1 className="md:text-3xl ">Tochi Amanze.</h1>
+        <h2 className="md:text-2xl">
           <span>
             <TypeAnimation
               sequence={[
@@ -46,7 +45,7 @@ const Title = () => {
                 "Innovator",
                 2500,
                 () => {
-                  console.log("Sequence completed"); // Place optional callbacks anywhere in the array
+                  console.log("Sequence completed");
                 },
               ]}
               speed={10}
