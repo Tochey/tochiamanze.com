@@ -1,6 +1,4 @@
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsLinkedin } from "react-icons/bs";
 
 const SelfDescription = () => {
   return (
@@ -25,7 +23,7 @@ const SelfDescription = () => {
         >
           SAM.
         </a>
-        {" "} My primary career goal is to become a very successful Entrepreneur in the tech space.
+        {" "} My primary career goal is to become a very successful Entrepreneur in the tech industry.
       </p>
     </div>
   );

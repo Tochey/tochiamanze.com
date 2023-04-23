@@ -1,11 +1,10 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import { rhythm } from "../utils/typography";
-const Title = ({ data }: any) => {
+const Title = () => {
   const d = useStaticQuery(graphql`
     query TitleQuery {
       avatar: file(absolutePath: { regex: "/IMG_7327.jpg/" }) {
