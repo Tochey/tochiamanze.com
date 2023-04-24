@@ -22,6 +22,7 @@
     "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-plugin-typography": "^5.9.0",
     "gatsby-remark-images": "^7.9.0",
+    "gatsby-remark-video": "^1.2.5",
     "gatsby-source-filesystem": "^5.9.0",
     "gatsby-transformer-remark": "^6.9.0",
     "gatsby-transformer-sharp": "^5.9.0",

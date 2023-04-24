@@ -1,5 +1,4 @@
 import React from "react";
-import { rhythm } from "../utils/typography";
 
 const FavTechnologies = [
   {
@@ -41,7 +40,7 @@ const Media = [
 
 const SelfDescription = () => {
   return (
-    <div className="mb-10">
+    <div className="my-5">
       <p>
         I am a Software Engineer Intern at Flagship Pioneering with a passion
         for entrepreneurship as it enables me to leverage my technical skills to

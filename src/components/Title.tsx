@@ -2,17 +2,10 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { graphql } from "gatsby";
 import { useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 const Title = () => {
-  const d = useStaticQuery(graphql`
+  const { author } = useStaticQuery(graphql`
     query TitleQuery {
-      avatar: file(absolutePath: { regex: "/IMG_7327.jpg/" }) {
-        childImageSharp {
-          fixed(width: 150, height: 150, quality: 100, cropFocus: EAST) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       site {
         siteMetadata {
           author
@@ -24,11 +17,16 @@ const Title = () => {
   return (
     <div className="flex md:space-x-10">
       <div>
-        <Image
-          fixed={d.avatar.childImageSharp.fixed}
-          alt={d.site.siteMetadata?.author || `Tochi`}
+        <StaticImage
+          src="../content/assets/IMG_7327.jpg"
+          alt={author}
+          width={150}
+          height={150}
+          layout="constrained"
+          transformOptions={{ cropFocus: "east" }}
+          quality={100}
           className="rounded-full"
-        />{" "}
+        />
       </div>
       <div>
         <h1 className="md:text-3xl ">Tochi Amanze.</h1>

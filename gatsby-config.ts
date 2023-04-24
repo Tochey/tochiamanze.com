@@ -7,11 +7,35 @@ const config: GatsbyConfig = {
     siteUrl: `https://www.tochiamanze.com`,
     author: `Tochi Amanze`,
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-video`,
+            options: {
+              width: "100%",
+              height: "auto",
+              preload: "auto",
+              muted: true,
+              autoplay: true,
+              playsinline: true,
+              controls: false,
+              loop: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              showCaptions: true,
+            },
+          },
+        ]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,19 +43,26 @@ const config: GatsbyConfig = {
         name: `assets`,
       },
     },
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
-        {
-          resolve: `gatsby-remark-images`,
-          options: {
-            maxWidth: 590,
-          },
-        },
-      ],
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/blog`,
+        name: `blog`,
+      },
     },
-  },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -43,7 +74,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`
-    
+
   ],
 }
 
