@@ -30,7 +30,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
       <p style={paragraphStyles}>
         What😨, what are you doing here...LEAVE🫵🏾
         <br />
-        {process.env.NODE_ENV === "development" ? (
+        {process.env["NODE_ENV"] === "development" ? (
           <>
             <br />
             Try creating a page in <code style={codeStyles}>src/pages/</code>.

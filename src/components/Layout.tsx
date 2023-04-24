@@ -1,4 +1,3 @@
-import { PageProps } from 'gatsby'
 import React, { ReactNode } from 'react'
 import { rhythm } from '../utils/typography'
 

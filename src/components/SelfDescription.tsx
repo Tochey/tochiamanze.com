@@ -45,7 +45,7 @@ const SelfDescription = () => {
         I am a Software Engineer Intern at Flagship Pioneering with a passion
         for entrepreneurship as it enables me to leverage my technical skills to
         solve real world problems. I enjoy coding, problem solving and learning
-        new technologies. My favorite at the moment are -
+        new technologies. My favorites at the moment are-{" "}
         {FavTechnologies.map((ft) => {
           return (
             <>
