@@ -1,7 +1,7 @@
 ---
-title: Univibe Learnings
+title: Univibe
 description : Experience from the Viking 2023 Business pitch competition
-slug: /univibe-learnings
+slug: /univibe
 date: "2023-04-10"
 --- 
 
