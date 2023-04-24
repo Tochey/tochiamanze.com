@@ -16,11 +16,7 @@ const FavTechnologies = [
   {
     name: "SAM",
     link: "https://aws.amazon.com/serverless/sam/",
-  },
-  {
-    name: "langchain",
-    link: "https://python.langchain.com/en/latest/index.html",
-  },
+  }
 ];
 
 const Media = [
@@ -43,9 +39,9 @@ const SelfDescription = () => {
     <div className="my-5">
       <p>
         I am a Software Engineer Intern at Flagship Pioneering with a passion
-        for entrepreneurship as it enables me to leverage my technical skills to
-        solve real world problems. I enjoy coding, problem solving and learning
-        new technologies. My favorites at the moment are-{" "}
+        for entrepreneurship, I am the fastest and most curious learner I've
+        ever met. Intrests lie in problem solving My favorite technologies at the moment
+        are-{" "}
         {FavTechnologies.map((ft) => {
           return (
             <>

@@ -15,8 +15,7 @@ const Title = () => {
   `);
 
   return (
-    <div className="flex md:space-x-10">
-      <div>
+    <div className="flex md:space-x-10 space-x-5">
         <StaticImage
           src="../content/assets/IMG_7327.jpg"
           alt={author}
@@ -27,7 +26,6 @@ const Title = () => {
           quality={100}
           className="rounded-full"
         />
-      </div>
       <div>
         <h1 className="md:text-3xl ">Tochi Amanze.</h1>
         <h2 className="md:text-2xl">
