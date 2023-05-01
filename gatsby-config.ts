@@ -69,12 +69,17 @@ const config: GatsbyConfig = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: './static/favicon-16x16.png',
+      },
+    },
 
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-react-helmet`
-
   ],
 }
 

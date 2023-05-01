@@ -32,7 +32,7 @@ const Title = () => {
           <span>
             <TypeAnimation
               sequence={[
-                "Software Engineer",
+                "Engineer",
                 2500,
                 "Entrepreneur",
                 2500,

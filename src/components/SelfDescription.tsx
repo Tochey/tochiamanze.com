@@ -10,16 +10,24 @@ const FavTechnologies = [
     link: "https://nodejs.org/en/",
   },
   {
-    name: "aws cdk",
-    link: "https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html",
+    name: "react",
+    link: "https://react.dev/",
   },
   {
-    name: "SAM",
-    link: "https://aws.amazon.com/serverless/sam/",
-  }
+    name: "AWS",
+    link: "https://aws.amazon.com/",
+  },
 ];
 
 const Media = [
+  {
+    name: "twitter",
+    link: "https://twitter.com/surverless",
+  },
+  {
+    name: "tiktok",
+    link: "https://www.tiktok.com/@surverless",
+  },
   {
     name: "github",
     link: "https://github.com/Tochey",
@@ -38,23 +46,22 @@ const SelfDescription = () => {
   return (
     <div className="my-5">
       <p>
-        I am a Software Engineer Intern at Flagship Pioneering with a passion
-        for entrepreneurship, I am the fastest and most curious learner I've
-        ever met. Intrests lie in problem solving My favorite technologies at the moment
-        are-{" "}
+        I am a 21 year old Cloud Engineer who enjoy building startups. I am the fastest and most curious learner I've
+        ever met. I mostly mess around with-{" "}
         {FavTechnologies.map((ft) => {
           return (
             <>
               <a href={ft.link} target="_blank" rel="noopener noreferrer">
-                {ft.name},
+                {ft.name}
               </a>
               <span> </span>
             </>
           );
         })}
+      . Currently tinkering in a AI Space
       </p>
       <ul className="my-10">
-        <p>Find me Online at -</p>
+        <p>Find me Online at:</p>
         {Media.map((m) => {
           return (
             <li className="inline-block mr-5 mt-5">
