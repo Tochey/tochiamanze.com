@@ -5,6 +5,7 @@ import Title from "../components/Title";
 import SelfDescription from "../components/SelfDescription";
 import SEO from "../components/Seo";
 
+//
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
   data: {
     allMarkdownRemark: { edges },
