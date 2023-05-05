@@ -17,6 +17,10 @@ const FavTechnologies = [
     name: "AWS",
     link: "https://aws.amazon.com/",
   },
+  {
+    name: "serverless",
+    link: "https://aws.amazon.com/lambda/serverless-architectures-learn-more/"
+  }
 ];
 
 const Media = [
@@ -46,7 +50,7 @@ const SelfDescription = () => {
   return (
     <div className="my-5">
       <p>
-        I am a 21 year old Cloud Engineer who enjoy building startups. I am the fastest and most curious learner I've
+        I am a 21 year old Cloud Engineer who enjoys building startups. I am the fastest and most curious learner I've
         ever met. I mostly mess around with-{" "}
         {FavTechnologies.map((ft) => {
           return (
