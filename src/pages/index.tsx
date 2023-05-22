@@ -1,11 +1,10 @@
 import * as React from "react";
 import { HeadFC, Link, PageProps, graphql } from "gatsby";
-import Layout from "../components/Layout";
 import Title from "../components/Title";
+import Layout from "../components/Layout";
 import SelfDescription from "../components/SelfDescription";
 import SEO from "../components/Seo";
 
-//
 const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
   data: {
     allMarkdownRemark: { edges },
@@ -13,7 +12,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQuery>> = ({
 }) => {
   return (
     <Layout>
-      <SEO title="Home" lang="en" meta={[]} description="" />
+      <SEO title="Home"  description="What am i even supposed to put here?" />
       <Title />
       <SelfDescription />
       <p className="my-5">Blogs:</p>

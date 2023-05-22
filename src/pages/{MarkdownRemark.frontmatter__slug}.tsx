@@ -6,7 +6,7 @@ import SEO from "../components/Seo";
 
 const BlogPostTemplate: React.FC<PageProps<Queries.BlogPostTemplateQuery>> = ({data}) => {
   const post = data.markdownRemark
-
+  console.log(post)
   return (
     <Layout>
       <SEO

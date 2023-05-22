@@ -3,7 +3,7 @@ import Typography from "typography"
 import doelger from "typography-theme-doelger"
 
 
-const typography = new Typography(doelger)
+const typography = new Typography(doelger);
 
 doelger.overrideThemeStyles = () => {
     return {
@@ -12,7 +12,6 @@ doelger.overrideThemeStyles = () => {
       },
     }
   }
-
-
+  
 export const { scale, rhythm, options } = typography
 export default typography

@@ -6,6 +6,8 @@ const config: GatsbyConfig = {
     description: "Personal Blog",
     siteUrl: `https://www.tochiamanze.com`,
     author: `Tochi Amanze`,
+    image: './src/content/assets/IMG_7327.jpg',
+    twitter: '@surverless'
   },
   graphqlTypegen: true,
   plugins: [
@@ -13,6 +15,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          // `gatsby-remark-line-breaks`,
           {
             resolve: `gatsby-remark-video`,
             options: {
@@ -29,8 +32,7 @@ const config: GatsbyConfig = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
-              showCaptions: true,
+              maxWidth: 250
             },
           },
         ]
@@ -51,32 +53,18 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: './static/favicon-16x16.png',
       },
     },
-
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

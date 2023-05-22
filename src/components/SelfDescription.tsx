@@ -50,7 +50,7 @@ const SelfDescription = () => {
   return (
     <div className="my-5">
       <p>
-        I am a 21 year old Cloud Engineer who enjoys building startups. I am the fastest and most curious learner I've
+        I am a 21 year old who enjoys building. I am the fastest and most curious learner I've
         ever met. I mostly mess around with-{" "}
         {FavTechnologies.map((ft) => {
           return (
@@ -62,7 +62,7 @@ const SelfDescription = () => {
             </>
           );
         })}
-      . Currently tinkering in a AI Space
+      
       </p>
       <ul className="my-10">
         <p>Find me Online at:</p>
